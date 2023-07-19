@@ -140,7 +140,7 @@ class ConnectorXMLRPC(ConnectorBase):
     """
     class Meta:
         name = 'xml-rpc'
-        ssl = False
+        ssl = True
 
     def get_service_url(self, service_name):
         addr = self.host
